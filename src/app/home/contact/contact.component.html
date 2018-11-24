@@ -1,0 +1,55 @@
+<div class="main-wrapper">
+  <div class="transparent-white-container">
+    <div class="container-fluid">
+      <!-- xxxxx -->
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">S No</th>
+            <th scope="col">Name</th>
+            <th scope="col">age</th>         
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor ="let item of mydata">
+            <td>{{item.sno}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.age}}</td>   
+                  
+          </tr>
+        </tbody>
+      </table>
+      <select class="btn" (change)="RowPerPage($event)">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+    </select>
+    <button [disabled]="currentPage == 1" (click)="previous()">prev</button>
+    <button [disabled]="currentPage == pageSize" (click)="next()">next</button>
+
+  
+      <!-- xxxxx -->
+    </div>
+    
+  </div>
+  
+</div>
+<div class="mybutton">
+  <div *ngFor="let i of arrayOne(pageSize); let z = index; ">
+    <button class="mybutton" (click)="directPage(z+1)">{{z+1}}</button>
+          </div>
+</div>
+
+<form   (ngSubmit)="myfuncyion()" >
+
+  <button  type="submit">submit</button>
+
+</form>
+
+
+form in html
+
+
+
+
+
