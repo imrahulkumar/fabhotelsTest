@@ -1,17 +1,11 @@
-# Contact-app
+# Pagination
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
-
-## Project is Hosted at: heroku
-
-Link.: https://contact-apps.herokuapp.com/
 
 ## Application features
 
 1) Developed in Angular 5/6
-2) Integrated 'Nexmo' API for message sending feature.
-3) Run your chrome browser in security disabled mode.
-4) For ubuntu: disable mode chrome command: google-chrome --user-data-dir=”/var/tmp/Chrome” --disable-web-security
+2) Implemented pagination concept.
 
 ## Development server
 
